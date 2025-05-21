@@ -98,4 +98,4 @@ DerivedDataCache/
 # Ignore Import Folder in Assets
 Assets/Import/
 Assets/Materials
-Assets/Animations
+Assets/Animations/Clips
