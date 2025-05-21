@@ -8,6 +8,7 @@ public class AnimationHandler : MonoBehaviour
     [SerializeField] private PlayerMovement pm;
     [SerializeField] private GameObject lowerBody;
     [SerializeField] private GameObject shadowBody;
+    [SerializeField] private GameObject hands;
     [SerializeField] private Transform orientation;
     
     
@@ -35,6 +36,7 @@ public class AnimationHandler : MonoBehaviour
     private readonly int turnLeft90Hash = Animator.StringToHash("Left Turn 90");
     private Animator lowerBodyAnimator;
     private Animator shadowBodyAnimator;
+    private Animator handsAnimator;
     private lower lowerBodyScript;
     private Transform lowerBodyTransform;
     private Transform shadowBodyTransform;
@@ -47,6 +49,9 @@ public class AnimationHandler : MonoBehaviour
         
         shadowBodyAnimator = shadowBody.GetComponent<Animator>();
         shadowBodyTransform = shadowBody.transform;
+        
+        handsAnimator = hands.GetComponent<Animator>();
+        lowerBodyAnimator.applyRootMotion = false;
     }
 
     void Update()
