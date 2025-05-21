@@ -816,7 +816,8 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: ASSET_INVENTORY;__MICROSPLAT__;__MICROSPLAT_GLOBALTEXTURE__;__MICROSPLAT_DETAILRESAMPLE__;__MICROSPLAT_TERRAINBLEND__;__MICROSPLAT_TRIPLANAR__;__MICROSPLAT_TEXTURECLUSTERS__;__MICROSPLAT_TESSELLATION__;__MICROSPLAT_STREAMS__;__MICROSPLAT_WINDGLITTER__;__MICROSPLAT_SNOW__;__MICROSPLAT_ALPHAHOLE__
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
